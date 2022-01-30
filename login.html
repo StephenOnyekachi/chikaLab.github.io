@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin login</title>
+    <script type="text/javascript" src="js/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="img/icon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div>
+    <div class="header">
+            <h1>Admin Login</h1>
+        <div class="head">
+            
+            <form method="GET" action="" onsubmit="">
+
+                <div class="row">
+                    <label>User Name</label><br>
+                    <input type="text" placeholder="Enter username" id="log_first" required>
+                </div>
+                <div class="row">
+                    <label>Password</label><br>
+                    <input type="password" placeholder="Enter Password" id="log_pass"required>
+                </div>
+                <div class="row">
+
+                    <input type="submit" id="log_but" value="LOGIN" onclick="but(this)">
+                    <!-- <button id="log_but" onclick="but(this)">LOGIN</button> -->
+
+                </div>
+
+            </form>
+
+            <div id="msg">
+                <pre></pre>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>

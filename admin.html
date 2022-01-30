@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin panel</title>
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="img/icon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+
+    <style>
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 1.2rem rgba(58, 0, 247, 0.925);
+            margin: 10px;
+        } 
+    </style>
+
+</head>
+<body>
+    <h1 id="admin">Admin Panel</h1>
+    
+    <a href="index.html" id="back"><i class="fa fa-arrow-circle-up"></i>Go to Home Page</a>
+
+    <div>
+        <div class="header">
+            <h1 style="text-align:center;">javascript image gallery</h1>
+            <br><br>
+            <!-- <form id="form" enctype="multipart/form-data" method="POST">
+                <div>
+                    <textarea id="title"></textarea><br>
+                    <input type="file" id="image"><br>
+                    <input type="file" id="img"><br>
+                    <textarea id="text"></textarea>
+                </div>
+                <div>
+                    <button>upload</button>
+                </div>
+            </form>
+            <button onclick="remove()">remove</button> -->
+            <div class="head">
+
+                <h3>For new content to Home Page</h3>
+                
+                <form id="form" enctype="multipart/form-data" method="POST">
+
+                    <div class="row">
+                        <label> 
+                            <h1>Title</h1>
+                            <textarea id="title"></textarea>
+                        </label>
+                        
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <label><h1>content/write up</h1></label><br>
+                        <textarea id="text"></textarea>
+                    </div>
+
+                    <hr>
+
+                    <div class="set">
+
+                        <!-- <img id="imgPreview" src="" alt="Preview" style="width: 200px; height: 200px;"><br> -->
+        
+                        <div><h3>Add Picture</h3></div>
+
+                        <input type="file" name="file" id="image">
+                        <label class="fa fa-plus" for="image" id="me"> Add</label><br>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+
+                        <button class=" fa fa-plus" id="add-bt">Upload</button>
+
+                    </div>
+                </form>
+                <button class="fa fa-minus" id="minus-bt" onclick="remove()">Delete</button>
+
+                <hr>
+
+                <div id="uploads">
+                    <div><h3 id="uploaded">Title</h3></div>
+                    <div class="title"><i class="fa fa-minus"> Delete</i></div><br>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- <div class="header">
+                
+            <div class="head">
+
+                <h3>For new content to Gallery</h3>
+                
+                <form>
+
+                    <div class="row">
+                        <label> 
+                            <h1>Title</h1>
+                            <input type="text">
+                        </label>
+                        
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <label><h1>content/write up</h1></label><br>
+                        <textarea></textarea>
+                    </div>
+
+                    <hr>
+
+                    <div class="set">
+
+                        <img id="imgPreview" src="" style="width: 200; height: 200;"><br>
+        
+                        <input type="file" name="file" id="me">
+                        <div><h3>Add Picture</h3></div>
+                        <div><i class="fa fa-plus" for="me" id="image"> Add</i></div><br>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+
+                        <i class="fa fa-minus" id="minus-bt" onclick="but(this)"> Delete</i>
+                        <i class=" fa fa-plus" id="add-bt" onclick="but(this)"> Add</i>
+
+                    </div>
+                    <hr>
+
+                </form>
+
+                <div>
+                    <div><h3>Title</h3></div>
+                    <div class="title"><i class="fa fa-minus"> Delete</i></div><br>
+                </div>
+                
+            </div>
+            <div id="msg">
+                <pre></pre>
+            </div>
+        </div>   -->
+    </div>
+    <div id="result"></div>
+    <div id="result1"></div>
+    <div id="result2"></div>
+
+</body>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
